@@ -1,0 +1,414 @@
+/* 폰트 및 기본 설정 (Wix 스타일) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap');
+
+:root {
+    --primary-font: 'Playfair Display', serif; 
+    --body-font: 'Noto Sans KR', sans-serif;    
+    --text-color: #1a1a1a; 
+    --bg-color: #ffffff;
+    --accent-color: #8B4513; 
+    --hero-overlay: rgba(255, 255, 255, 0.7); /* 밝은 배경 오버레이 */
+}
+
+/* === 다크 모드 변수 === */
+body.dark-mode {
+    --text-color: #f0f0f0;
+    --bg-color: #121212;
+    --accent-color: #D2691E; /* 다크모드에서 잘 보이는 주황빛 */
+    --hero-overlay: rgba(0, 0, 0, 0.7); /* 어두운 배경 오버레이 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 */
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+    padding: 25px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: 700;
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 35px;
+    transition: opacity 0.3s;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+/* 히어로 섹션 */
+.hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+        url('../images/vision-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-image 0.3s;
+}
+
+.hero-content h1 {
+    font-family: var(--primary-font);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* 핵심 푸드테크 소개 섹션 */
+.showcase {
+    padding: 120px 0;
+    background-color: var(--bg-color);
+}
+
+.showcase .section-title {
+    font-family: var(--primary-font);
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 80px;
+}
+
+.tech-item { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 100px; }
+.tech-item.reverse .item-image { order: 2; }
+.tech-item.reverse .item-text { order: 1; }
+.item-image img { width: 100%; height: auto; display: block; border-radius: 5px; }
+.item-text h3 { font-size: 1rem; font-weight: 500; color: var(--accent-color); margin-bottom: 15px; letter-spacing: 1px; }
+.item-text h2 { font-family: var(--primary-font); font-size: 2.8rem; margin-bottom: 20px; line-height: 1.2; }
+.item-text p { font-size: 1rem; line-height: 1.8; margin-bottom: 30px; }
+.btn-more { display: inline-block; background-color: var(--text-color); color: var(--bg-color); padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: 500; transition: background-color 0.3s; border: 1px solid var(--text-color); }
+.btn-more:hover { background-color: var(--accent-color); color: white; border-color: var(--accent-color); }
+
+
+/* 필터 버튼 스타일 */
+.filter-buttons { text-align: center; margin-bottom: 60px; }
+.filter-btn { background: none; border: 1px solid #ddd; color: #888; padding: 10px 25px; margin: 0 5px; border-radius: 20px; cursor: pointer; font-size: 1rem; font-weight: 500; transition: all 0.3s ease; }
+.filter-btn:hover { background-color: #f5f5f5; color: #1a1a1a; }
+.filter-btn.active { background-color: var(--text-color); color: var(--bg-color); border-color: var(--text-color); }
+
+/* 다크모드에서 필터 버튼 스타일 조정 */
+body.dark-mode .filter-btn:hover { background-color: #333; color: white; }
+body.dark-mode .filter-btn { border-color: #444; }
+
+
+/* 콘텐츠 보이기/숨기기 효과 */
+.tech-item { transition: opacity 0.4s ease, transform 0.4s ease; }
+.tech-item.hidden { opacity: 0; transform: scale(0.95); }
+
+
+/* 비전 섹션 */
+.vision {
+    padding: 120px 0;
+    text-align: center;
+    background-image: 
+        linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+        url('../images/vision-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.vision h2 {
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.vision p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* 푸터 */
+footer {
+    padding: 50px 0;
+    background-color: #1a1a1a; /* 다크모드여도 푸터는 어둡게 유지 */
+    color: #999;
+    text-align: center;
+}
+
+/* === 스크롤 리모컨 (로스트아크 스타일) === */
+.scroll-remote {
+    position: fixed;
+    top: 50%;
+    right: 30px; /* 우측 여백 */
+    transform: translateY(-50%);
+    z-index: 1000;
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: white; /* 흰색 배경 */
+    border: 1px solid #dcdcdc; /* 외곽선 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 은은한 그림자 */
+    width: 80px; /* 박스 너비 고정 */
+}
+
+/* 다크 모드일 때 리모컨 스타일 */
+body.dark-mode .scroll-remote {
+    background-color: #222;
+    border-color: #444;
+}
+
+/* 공통 버튼 스타일 */
+.scroll-remote button {
+    display: flex;
+    flex-direction: column; /* 아이콘 위, 텍스트 아래 */
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: auto;
+    padding: 12px 0; /* 버튼 내부 여백 */
+    
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #eee; /* 버튼 사이 구분선 */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #333; /* 기본 글자색 */
+}
+
+/* 마지막 버튼은 구분선 제거 */
+.scroll-remote button:last-child {
+    border-bottom: none;
+}
+
+/* 마우스 올렸을 때 */
+.scroll-remote button:hover {
+    background-color: #f8f9fa; /* 아주 연한 회색 */
+    color: var(--accent-color); /* 포인트 컬러 */
+}
+
+/* 다크모드 버튼 스타일 */
+body.dark-mode .scroll-remote button {
+    color: #eee;
+    border-bottom-color: #444;
+}
+body.dark-mode .scroll-remote button:hover {
+    background-color: #333;
+}
+
+/* 아이콘 스타일 */
+.scroll-remote .icon {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+/* 텍스트 스타일 */
+.scroll-remote .text {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* TOP, DOWN 영어 텍스트 스타일 */
+.scroll-remote .text-en {
+    font-family: var(--primary-font); /* 세리프 폰트 사용 */
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* 중간 굵은 구분선 (옵션) */
+.remote-divider {
+    height: 3px;
+    background-color: var(--accent-color);
+    width: 100%;
+}
+
+
+/* === 팝업(모달) 창 스타일 === */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.active { display: flex; }
+
+.modal-content {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 90%;
+    max-width: 900px;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    overflow: hidden;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+
+.modal-overlay.active .modal-content { transform: scale(1); opacity: 1; }
+
+.modal-image-box { width: 45%; flex-shrink: 0; }
+.modal-image-box img { width: 100%; height: 100%; object-fit: cover; }
+.modal-text-box { width: 55%; padding: 40px; overflow-y: auto; }
+
+.modal-text-box h2 {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.4; 
+    word-break: keep-all; 
+}
+
+.modal-text-box p { font-size: 1rem; line-height: 1.8; }
+.modal-text-box ul { margin-top: 15px; margin-left: 20px; }
+.modal-text-box li { font-size: 0.95rem; line-height: 1.7; }
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+    color: #aaa;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s;
+}
+.modal-close:hover { color: var(--text-color); }
+
+.modal-detail-content { display: none; }
+
+/* =========================================
+   ▼ 서브 페이지 전용 스타일 추가 (About, Contact, Expertise)
+   ========================================= */
+
+/* 서브 페이지용 히어로 섹션 (높이를 50%로 줄임) */
+.sub-hero {
+    height: 50vh; /* 화면의 절반 높이 */
+    background-image: 
+        linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+        url('../images/vision-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 배경 고정 유지 */
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sub-hero h1 { font-family: var(--primary-font); font-size: 3.5rem; font-weight: 700; margin-bottom: 10px; }
+.sub-hero p { font-size: 1.1rem; opacity: 0.8; }
+
+/* 공통 콘텐츠 섹션 스타일 */
+.content-section { padding: 100px 0; background-color: var(--bg-color); }
+.content-title { font-family: var(--primary-font); font-size: 2.5rem; margin-bottom: 40px; text-align: center; }
+.content-text { font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; color: var(--text-color); }
+
+/* --- About 페이지 (팀원 소개) --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+.team-card {
+    text-align: center;
+    background: rgba(0,0,0,0.03);
+    padding: 40px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.team-card:hover { transform: translateY(-10px); }
+.team-icon { font-size: 3rem; margin-bottom: 20px; }
+.team-name { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.team-role { color: var(--accent-color); font-weight: 500; margin-bottom: 15px; }
+.team-desc { font-size: 0.95rem; line-height: 1.6; color: #666; }
+body.dark-mode .team-desc { color: #aaa; }
+
+/* --- Contact 페이지 (폼 스타일) --- */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.contact-info h3 { font-size: 1.5rem; margin-bottom: 20px; }
+.contact-info p { margin-bottom: 15px; font-size: 1.1rem; }
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.form-group input, .form-group textarea {
+    width: 100%; padding: 15px;
+    border: 1px solid #ddd; border-radius: 5px;
+    font-size: 1rem; font-family: var(--body-font);
+    background-color: transparent; color: var(--text-color);
+}
+.form-group textarea { height: 150px; resize: none; }
+.btn-submit {
+    padding: 15px; background-color: var(--text-color); color: var(--bg-color);
+    border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; transition: 0.3s;
+}
+.btn-submit:hover { background-color: var(--accent-color); color: white; }
+
+/* --- Expertise 페이지 (텍스트 레이아웃) --- */
+.expertise-detail {
+    background-color: rgba(0,0,0,0.02);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border-left: 5px solid var(--accent-color);
+}
+.expertise-detail h3 { font-size: 1.8rem; margin-bottom: 15px; font-family: var(--primary-font); }

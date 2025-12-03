@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD & TECH - 기술로 맛의 미래를 만듭니다</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">FOOD & TECH</a>
+            <nav>
+                <a href="expertise.html">Expertise</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Where Flavor Meets Future</h1>
+            <p>AI, 로보틱스, 데이터 과학이 만들어내는 놀라운 미식의 세계를 탐험하세요.</p>
+        </div>
+    </section>
+
+    <section id="tech-areas" class="showcase">
+        <div class="container">
+            <h2 class="section-title">OUR EXPERTISE</h2>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="coffee">커피</button>
+                <button class="filter-btn" data-category="whisky">위스키</button>
+                <button class="filter-btn" data-category="bakery">베이커리</button>
+                <button class="filter-btn" data-category="dessert">디저트</button>
+            </div>
+
+            <div class="tech-item-container">
+
+                <div class="tech-item" data-category="coffee">
+                    <div class="item-image"><img src="images/coffee.jpg" alt="AI 바리스타"></div>
+                    <div class="item-text">
+                        <h3>COFFEE TECH 1</h3>
+                        <h2>AI 바리스타가 구현하는<br>완벽한 한 잔</h2>
+                        <p>AI가 원두 특성과 사용자 취향을 분석하여 최적의 추출 레시피를 제안합니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>AI 바리스타는 수천, 수만 개의 원두 프로파일과 추출 데이터를 머신러닝 모델로 학습합니다. </p>
+                            <p>사용자가 원하는 산미, 바디감, 향을 선택하면, AI가 실시간으로 그라인딩, 온도, 유속, 추출 시간을 마이크로 단위로 제어하여 세상에 단 하나뿐인 맞춤형
+                                커피를 제공합니다.</p>
+                            <ul>
+                                <li><strong>핵심 기술:</strong> 머신러닝 기반 맛 예측, 정밀 유체 제어</li>
+                                <li><strong>기대 효과:</strong> 언제나 균일한 고품질 커피 제공, 인건비 절감</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item reverse" data-category="coffee">
+                    <div class="item-image"><img src="images/coffee-2.jpg" alt="스마트 로스터"></div>
+                    <div class="item-text">
+                        <h3>COFFEE TECH 2</h3>
+                        <h2>데이터로 제어하는 <br>스마트 로스팅</h2>
+                        <p>온도, 시간, 속도 프로파일을 데이터화하여 <br>언제나 균일하고 완벽한 로스팅 결과를 보장합니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>전통적인 로스팅이 장인의 감각에 의존했다면, 스마트 로스팅은 IoT 센서를 통해 드럼 내부 온도, 배기 온도, 공기 흐름을 초당 수십 회 측정합니다.</p>
+                            <p>수집된 '로스팅 프로파일' 데이터는 클라우드에 저장되어, 전 세계 어디서나 동일한 맛의 원두를 볶아낼 수 있게 합니다. <br>또한, AI가 마이야르
+                                반응(Maillard reaction)의 최적점을 찾아내어 원두의 잠재된 풍미를 극대화합니다.</p>
+                            <ul>
+                                <li><strong>핵심 기술:</strong> IoT 센싱, 클라우드 데이터 동기화</li>
+                                <li><strong>기대 효과:</strong> 품질의 표준화, 원격 생산 관리</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item" data-category="coffee">
+                    <div class="item-image"><img src="images/coffee-3.jpg" alt="원두 이력 추적"></div>
+                    <div class="item-text">
+                        <h3>COFFEE TECH 3</h3>
+                        <h2>블록체인으로 <br>원두 이력 추적</h2>
+                        <p>농장에서 당신의 컵까지, 커피 원두의 모든 여정을 투명하게 <br>추적하여 신뢰를 더합니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>블록체인 기술을 활용하여 커피가 재배된 농장의 기후 정보부터 수확 시기, 가공 방식, 운송 과정, 로스팅 날짜까지 모든 정보를 위변조 불가능한 원장에
+                                기록합니다.</p>
+                            <p>소비자는 컵에 붙은 QR코드를 스캔하는 것만으로 내 커피가 공정 무역을 거쳤는지, 얼마나 신선한지 즉시 확인할 수 있습니다.</p>
+                            <ul>
+                                <li><strong>핵심 기술:</strong> 블록체인(Blockchain), QR 코드</li>
+                                <li><strong>기대 효과:</strong> 투명한 유통 구조 확립, 윤리적 소비 촉진</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item reverse" data-category="coffee">
+                    <div class="item-image"><img src="images/coffee-4.jpg" alt="질소 커피"></div>
+                    <div class="item-text">
+                        <h3>COFFEE TECH 4</h3>
+                        <h2>질소(Nitro) 추출 시스템</h2>
+                        <p>커피에 미세한 질소 가스를 주입하여 부드러운 거품과 <br>새로운 풍미를 만들어냅니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>고압의 질소(N2) 가스를 차가운 콜드브루 커피에 주입하여, 흑맥주(Stout)와 같은 풍성하고 크리미한 거품(Head)을 만들어내는 기술입니다.</p>
+                            <p>질소는 산소와 달리 커피의 산화를 막아주며, 설탕 없이도 입안에서 느껴지는 단맛과 부드러운 질감을 극적으로 향상시킵니다. 탭(Tap) 시스템을 통해 카페 운영
+                                효율성 또한 높여줍니다.</p>
+                            <ul>
+                                <li><strong>핵심 기술:</strong> 가스 주입(Infusion) 기술, 케거레이터 시스템</li>
+                                <li><strong>기대 효과:</strong> 새로운 미식 경험 제공, 음료의 보존성 향상</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-item" data-category="whisky">
+                    <div class="item-image"><img src="images/whisky.jpg" alt="버번 숙성의 센서 도입"></div>
+                    <div class="item-text">
+                        <h3>WHISKY TECH 1</h3>
+                        <h2>센서를 이용한 <br>숙성 환경 최적화</h2>
+                        <p>천사의 몫을 정밀하게 측정하여 <br>버번 위스키 특유의 농축된 단맛을 이끌어냅니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>IoT 센서를 이용하여 숙성 창고 내의 온도, 습도, 기압 데이터를 실시간으로 수집하며, 원액의 오크 목재 침투 및 추출 효율을 극대화하여 풍미 화합물의 흡수
+                                속도를 균일화합니다.</p>
+                            <p>최종적으로 환경 및 증발 데이터를 통합한 예측 모델은 수율의 손실을 최소화하고, 원하는 풍미 프로필을 충족하는 과학적인 최적 병입 시점을 제시하여 생산 효율을
+                                향상시킵니다.</p>
+                            <ul>
+                                <li><strong>특징:</strong> 미국 제조, 옥수수 베이스, 달콤한 맛, 스모키</li>
+                                <li><strong>풍미 노트:</strong> 캐러멜 풍미, 바닐라 향, 강한 맛</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item reverse" data-category="whisky">
+                    <div class="item-image"><img src="images/whisky-2.jpg" alt="데이터 숙성 스카치 위스키"></div>
+                    <div class="item-text">
+                        <h3>WHISKY TECH 2</h3>
+                        <h2>데이터로 숙성하는 <br>깊고 새로운 풍미</h2>
+                        <p>수십년의 기록이 만들어낸 스카치 위스키 빅데이터가 <br>불량 제품을 빠르고 정확하게 판별합니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>각종 변수들에 의한 장기 빅데이터 축적을 인공지능 모델로 분석하여, 원액의 풍미 성분 변화를 예측하고 특정 맛을 이끌어내는 숙성 경로를 정교하게 설계합니다.
+                            </p>
+                            <p>숙성 중 발생하는 불량품이나 예상치 못한 품질 저하는 질량 분석 데이터를 포함한 화학적 프로필과 숙성 환경 빅데이터를 대조하여 빠르고 정확하게 판별하며,
+                                전통적인 방식보다 훨씬 정밀한 품질 통제를 가능하게 합니다.</p>
+                            <ul>
+                                <li><strong>특징:</strong> 스코틀랜드 제조, 전통 방식, 싱글몰트 & 블렌디드</li>
+                                <li><strong>풍미 노트:</strong> 피트 향, 클래식 위스키, 복합적 풍미</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item" data-category="whisky">
+                    <div class="item-image"><img src="images/whisky-3.jpg" alt="증류공정의 자동화"></div>
+                    <div class="item-text">
+                        <h3>WHISKY TECH 3</h3>
+                        <h2>증류의 정밀제어 자동화</h2>
+                        <p>증류공정의 정밀제어를 자동화하여 <br>균일한 맛의 아이리쉬 위스키를 제조합니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>아이리쉬 위스키 특유의 3회 증류 방식은 증류 과정의 정밀한 제어가 최종 풍미에 결정적인 영향을 줍니다. 센서 기반 자동화 시스템은 증류기 내부의 온도, 압력,
+                                유속을 실시간으로 모니터링하고 PID 제어 루프를 통해서 증류 속도를 밀리초 단위로 조정합니다.</p>
+                            <p>이 자동화된 정밀 증류 기술은 아이리쉬 위스키 특유의 깨끗하고 부드러운 맛과 균일한 품질을 보장합니다.</p>
+                            <ul>
+                                <li><strong>특징:</strong> 아일랜드 제조, 3번 증류, 부드러움</li>
+                                <li><strong>풍미 노트:</strong> 과일 향, 꽃 향기, 달달한 맛, 가벼움</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item reverse" data-category="whisky">
+                    <div class="item-image"><img src="images/whisky-4.jpg" alt="일본 위스키 특유의 향과 품미"></div>
+                    <div class="item-text">
+                        <h3>WHISKY TECH 4</h3>
+                        <h2>일본 위스키 <br>특유의 향과 풍미</h2>
+                        <p>미즈나라(일본 참나무)통이 가진 특유의 향과 풍미를 화학적으로 <br>모방하여 일본 위스키 특유의 독특한 맛을 재현 했습니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>일본 위스키는 미즈나라 숙성에서 비롯되는 복합적이고 스파이시한 풍미가 핵심입니다. 질량 분석을 사용하여 미즈나라 오크통에서 추출되는 핵심 풍미 분자의 프로필을
+                                정밀하게 분석합니다.</p>
+                            <p>어떤 화합물이 독특한 향을 구성하는지 연구하고 모방 및 재현함으로써, 희소하고 취급이 어려운 미즈나라 오크통에 대한 의존도를 줄이면서도 일관성 있는 맛을
+                                제공합니다.</p>
+                            <ul>
+                                <li><strong>특징:</strong> 재패니즈 제조, 미즈나라 오크통, 섬세한 풍미</li>
+                                <li><strong>풍미 노트:</strong> 균형 잡힌 맛, 하이볼 최적화, 동양풍</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-item" data-category="bakery">
+                    <div class="item-image"><img src="images/bakery.jpg" alt="건강, 기능성 강화"></div>
+                    <div class="item-text">
+                        <h3>BAKERY TECH 1</h3>
+                        <h2>건강 기능성 부터, <br>글루텐 프리까지</h2>
+                        <p>베이커리 시장의 고섬유, 프로바이오틱스 등 건강 성분 강화, 당 줄이기, <br>글루텐 프리 도입으로 건강과 기능성을 챙긴 베이커리를 확인해 보세요.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>'건강 기능성'은 단순히 칼로리를 낮추는 것이 아니라, 영양소 강화와 첨가물 최소화를 통해 몸에 이로운 기능을 더한 빵을 의미합니다.</p>
+                            <p>통곡물, 귀리, 치아시드 등을 활용해 식이섬유와 단백질을 보강하고, 버터와 설탕 대신 천연 감미료와 식물성 오일을 사용합니다. 특히 글루텐 프리 트렌드에 맞춰
+                                밀가루 대신 쌀가루, 아몬드 가루 등 대체 곡물을 사용하며, 전분 배합 기술로 식감을 유지합니다.</p>
+                            <ul>
+                                <li><strong>핵심 트렌드:</strong> 비건, 저당, 고단백, 고식이섬유, 글루텐 프리</li>
+                                <li><strong>소비자 인식:</strong> '속이 편한 빵', '가벼운 식단', 클린 베이킹</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item reverse" data-category="bakery">
+                    <div class="item-image"><img src="images/bakery-2.jpg" alt="미각과 시각을 모두 사로잡는 특별한 '경험' "></div>
+                    <div class="item-text">
+                        <h3>BAKERY TECH 2</h3>
+                        <h2>맛을 넘어선 즐거움이 <br>선택의 핵심</h2>
+                        <p>더 이상 맛 뿐만 아니라 식감, 향, 시각적인 즐거움이 제품 선택의 핵심.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>맛과 건강뿐 아니라 ‘보이는 즐거움’과 ‘시각적 만족감’이 중요한 구매 요소로 떠오르고 있습니다. SNS 소비 문화로 인해 ‘눈으로 먼저 먹는 빵’이
+                                일반화되었습니다.</p>
+                            <p>자연스러운 미니멀리즘 디자인을 선호하며, 말차, 비트, 단호박 등 천연 재료의 색감을 활용합니다. 보기 좋은 비주얼은 정성, 위생, 신뢰감을 전달하여 브랜드
+                                이미지를 강화하고 재구매로 이어지게 합니다.</p>
+                            <ul>
+                                <li><strong>핵심 요소:</strong> 비주얼 중심 소비, SNS 공유, 패키지 디자인</li>
+                                <li><strong>가치:</strong> 브랜드 감도, 시각적 경험, 신뢰도 상승</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item" data-category="bakery">
+                    <div class="item-image"><img src="images/bakery-3.jpg" alt="최신 베이커리 트렌드"></div>
+                    <div class="item-text">
+                        <h3>BAKERY TECH 3</h3>
+                        <h2>맛의 혁신: <br>익숙한 맛과 이색 조합</h2>
+                        <p>익숙함 속의 이색적인 맛 조합, 한정판과 스페셜 메뉴로 만나보세요.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>전통적인 빵을 현대적 감각으로 재해석하는 '뉴트로(New-tro)' 흐름이 강화되고 있습니다. 소보루, 단팥빵 등을 천연버터 크림, 수제 팥앙금 등 고급 재료로
+                                재탄생시킵니다.</p>
+                            <p>또한, 프랑스나 이탈리아의 제과 기술에 한국적 감성을 더한 '하이브리드 베이커리'가 등장하고 있습니다. 앙버터 크루아상, 쑥 인절미 마들렌 처럼 익숙한 맛에
+                                새로운 재료와 스토리를 더해 감정적 연결을 형성합니다.</p>
+                            <ul>
+                                <li><strong>핵심 트렌드:</strong> 뉴트로 감성, 하이브리드 베이커리</li>
+                                <li><strong>특징:</strong> 익숙하지만 새로운 맛, 기억의 현대적 재해석</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item reverse" data-category="bakery">
+                    <div class="item-image"><img src="images/bakery-4.jpg" alt="최신 베이커리 트렌드"></div>
+                    <div class="item-text">
+                        <h3>BAKERY TECH 4</h3>
+                        <h2>최신 베이커리 트렌드와 <br>유행하는 가게</h2>
+                        <p>서울부터 제주까지 지역의 특징과 트렌디한 기술이 만들어낸 맛을 즐겨보세요.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>지역 농산물과 로컬 식재료의 재발견이 이루어지고 있습니다. 국내산 쌀, 고구마, 콩, 흑임자 등을 사용하여 지역의 이야기와 맛을 담은 제품이 인기를 끕니다.
+                            </p>
+                            <p>천연 발효종과 저온 숙성 기술을 활용해 풍미를 강화하고, 지역 특산물을 활용한 시그니처 메뉴를 개발하여 방문객들에게 그 지역에서만 느낄 수 있는 특별한 미식
+                                경험을 제공합니다.</p>
+                            <ul>
+                                <li><strong>핵심 요소:</strong> 로컬 식재료 활용, 지역 스토리텔링</li>
+                                <li><strong>가치:</strong> 지속 가능한 소비, 지역 경제 활성화</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-item" data-category="dessert">
+                    <div class="item-image"><img src="images/dessert.jpg" alt="3D 프린팅 디저트"></div>
+                    <div class="item-text">
+                        <h3>DESSERT TECH 1</h3>
+                        <h2>3D 프린팅으로 만나는 <br>달콤한 상상</h2>
+                        <p>상상 속의 복잡하고 화려한 디자인의 디저트를 <br>3D 푸드 프린팅 기술로 현실에 구현합니다.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>3D 푸드 프린팅 기술은 재료 낭비를 줄이고 항상 일정한 품질을 유지할 수 있다는 큰 장점이 있습니다. 개인의 취향에 맞춘 100% 맞춤형 디저트 제작이
+                                가능하며, 기존 방식으로는 불가능했던 복잡하고 창의적인 디자인을 구현할 수 있습니다.</p>
+                            <p>다만, 현재는 높은 장비 가격과 사용 가능한 재료의 제한, 긴 제작 시간 등의 한계가 있어 이를 극복하기 위한 기술 연구가 활발히 진행 중입니다.</p>
+                            <ul>
+                                <li><strong>장점:</strong> 품질 유지, 재료 절감, 맞춤형 제작, 창작 가능성</li>
+                                <li><strong>단점:</strong> 높은 비용, 재료 제한, 제작 시간 소요</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item reverse" data-category="dessert">
+                    <div class="item-image"><img src="images/dessert-2.jpg" alt="상온에서도 녹지않는 터키의 디저트"></div>
+                    <div class="item-text">
+                        <h3>DESSERT TECH 2</h3>
+                        <h2>상온에서도 녹지않는 <br>터키의 디저트</h2>
+                        <p>난초 가루를 이용한 결정의 얽힘, 상온에서도 형태를 유지하는 돈두르마.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>터키의 전통 아이스크림 '돈두르마'가 잘 녹지 않는 비밀은 특별한 재료에 있습니다. 야생 난초 뿌리에서 추출한 '살렙(Salep)' 가루는 높은 점성을 가지고
+                                있어 아이스크림에 쫀득하고 탄탄한 식감을 부여합니다.</p>
+                            <p>또한, 유향 나무 진액(Mastic)은 아이스크림의 탄성을 높이고 단단한 구조를 형성하여 수분이 쉽게 빠져나가지 못하게 막아줍니다. 이 원리는 현대 식품
+                                공학에서 텍스처 개선제 연구에 중요한 영감을 줍니다.</p>
+                            <ul>
+                                <li><strong>핵심 재료:</strong> 살렙(야생 난초 뿌리 가루), 유향 나무 진액</li>
+                                <li><strong>특징:</strong> 높은 점성, 쫀득한 식감, 열에 강한 내성</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item" data-category="dessert">
+                    <div class="item-image"><img src="images/dessert-3.jpg" alt="소르베 : 프랑스 왕실의 디저트"></div>
+                    <div class="item-text">
+                        <h3>DESSERT TECH 3</h3>
+                        <h2>소르베: <br>프랑스 왕실의 선택</h2>
+                        <p>프랑스 왕실이 선택한 과일즙, 와인, 리큐르의 부드러운 화합을 만나보세요.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>소르베(Sorbet)의 역사는 기원전 3000년경 얼음에 과일즙을 섞어 먹던 것에서 시작되었습니다. 중세 아랍의 '샤르바트'를 거쳐 16세기 이탈리아에서
+                                발전했고, 17세기에는 프랑스 왕실의 고급 디저트로 자리 잡았습니다.</p>
+                            <p>유제품을 넣지 않고 과일즙, 와인, 리큐르 등을 얼려 만든 소르베는 깔끔한 뒷맛이 특징이며, 오늘날 초저온 급속 동결 기술을 만나 과일 본연의 향을 완벽하게
+                                보존하는 프리미엄 디저트로 진화했습니다.</p>
+                            <ul>
+                                <li><strong>역사:</strong> 고대 메소포타미아 -> 아랍(샤르바트) -> 프랑스 왕실</li>
+                                <li><strong>특징:</strong> 유제품 미사용(Non-Dairy), 과일 본연의 맛 강조</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item reverse" data-category="dessert">
+                    <div class="item-image"><img src="images/dessert-4.jpg" alt="일본의 전통 떡과 아이스크림의 융합"></div>
+                    <div class="item-text">
+                        <h3>DESSERT TECH 4</h3>
+                        <h2>일본의 모찌와 <br>아이스크림의 만남</h2>
+                        <p>일본의 전통과 현대 아이스크림 기술의 차가운 만남을 즐겨보세요.</p>
+                        <a href="#" class="btn-more">더 알아보기</a>
+                        <div class="modal-detail-content">
+                            <p>찹쌀을 쪄서 절구에 쳐 만든 일본의 전통 떡 '모찌'는 쫄깃한 식감이 특징입니다. 모찌(Mochi)라는 이름은 '가지다', '쥐다'라는 뜻의 동사 '모츠'와
+                                발음이 유사하여, 복을 쥐거나 중요한 것을 소유한다는 상징적 의미를 가집니다.</p>
+                            <p>이 전통적인 모찌가 현대의 아이스크림 기술과 만나 '모찌 아이스크림'으로 탄생했습니다. 차가운 아이스크림을 감싸면서도 딱딱하게 굳지 않고 쫄깃함을 유지하는 특수
+                                반죽 기술이 융합된 푸드테크의 대표적인 사례입니다.</p>
+                            <ul>
+                                <li><strong>특징:</strong> 전통(모찌)과 현대(아이스크림)의 융합</li>
+                                <li><strong>핵심 기술:</strong> 저온에서도 굳지 않는 떡 반죽 기술</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="vision">
+        <div class="container">
+            <h2>기술, 맛의 경험을 바꾸다</h2>
+            <p>
+                우리는 단순히 음식을 만드는 것을 넘어, 기술을 통해 맛의 경험을 재창조합니다.<br>
+                데이터 기반의 레시피 분석, 정교한 로보틱스, 지속가능한 생산 기술을 통해<br>
+                더 즐겁고, 더 똑똑하고, 더 나은 미식의 미래를 열어갑니다.
+            </p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 FOOD & TECH. All Rights Reserved.</p>
+        <p>Partnership Inquiry: contact@foodandtech.com</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <div class="scroll-remote">
+        <button id="btn-home">
+            <span class="icon">🏠</span>
+            <span class="text">홈으로</span>
+        </button>
+        <button id="btn-dark-mode">
+            <span class="icon">🌙</span>
+            <span class="text">다크모드</span>
+        </button>
+        <button id="btn-share">
+            <span class="icon">🔗</span>
+            <span class="text">공유하기</span>
+        </button>
+
+        <div class="remote-divider"></div>
+
+        <button id="btn-scroll-top">
+            <span class="text-en">TOP</span>
+        </button>
+        <button id="btn-scroll-bottom">
+            <span class="text-en">DOWN</span>
+        </button>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" title="닫기">&times;</button>
+            <div class="modal-image-box">
+                <img id="modal-image" src="" alt="상세 이미지">
+            </div>
+            <div class="modal-text-box">
+                <h2 id="modal-title"></h2>
+                <div id="modal-description"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

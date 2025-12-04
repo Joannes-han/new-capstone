@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnDarkMode = document.getElementById('btn-dark-mode');
     const btnShare = document.getElementById('btn-share');
 
-    // [기능 1] 홈으로 (수정됨: index.html로 이동)
+    // [기능 1] 홈으로
     if(btnHome) {
         btnHome.addEventListener('click', () => {
             window.location.href = 'index.html';
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(btnDarkMode) {
         btnDarkMode.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
-            // 다크모드 상태를 로컬 스토리지에 저장하면 페이지 이동해도 유지될 수 있습니다 (심화 기능)
+            // 다크모드 상태를 로컬 스토리지에 저장하면 페이지 이동해도 유지될 수 있습니다.
         });
     }
 
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 2. 스크롤 리모컨 기능 끝 ---
 
 
-    // ======== ▼ 3. 팝업(모달) 기능 ▼ ========
+    // ========  3. 팝업(모달) 기능  ========
     const modalOverlay = document.querySelector('.modal-overlay');
     const modalCloseBtn = document.querySelector('.modal-close');
     const learnMoreButtons = document.querySelectorAll('.btn-more');
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalTitle = document.getElementById('modal-title');
     const modalDescription = document.getElementById('modal-description'); 
 
-    // 모달 요소가 있는 페이지에서만 실행 (에러 방지)
+    // 모달 요소가 있는 페이지에서만 실행
     if(modalOverlay) {
         learnMoreButtons.forEach(button => {
             button.addEventListener('click', (e) => {
@@ -123,5 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    // ======== ▲ 수정 끝 ▲ ========
+    // ========  수정 끝  ========
+
 });
